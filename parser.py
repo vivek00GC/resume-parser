@@ -35,8 +35,8 @@ def extract_skills(text):
     return found_skills
 
 # Main function
-def parse_resume(sample_resume):
-    text = extract_text("sample_resume.pdf")
+def parse_resume(pdf_file):
+    text = extract_text(pdf_file)
 
     name = extract_name(text)
     email = extract_email(text)
@@ -48,4 +48,4 @@ def parse_resume(sample_resume):
     print("Skills:", ", ".join(skills))
 
 # Run program
-parse_resume("sample_resume.pdf")
+parse_resume("C:/Users/VICTUS/OneDrive/Desktop/resume_parser/sample_resume.pdf")
